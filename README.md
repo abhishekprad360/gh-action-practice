@@ -17,3 +17,7 @@
     2) Via an API call : Trigger by Rest APIs of Github
     3) Via different Workflow : Triggered from withing workflow
 3) Schedule : By Cronjob
+
+# Actions
+1) nodejs actions : actions/checkout@v4 is default action provided by Github for nodejs and actions/setup-node@v4 is default action to setuo node in runner. 
+npx create-react-app --template typescript react-app used to create react app inside directory.
