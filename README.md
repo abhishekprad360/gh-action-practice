@@ -32,3 +32,6 @@ npx create-react-app --template typescript react-app used to create react app in
 4) vars
 5) secrets
 
+# Expression
+
+1) Used of operators and functions
