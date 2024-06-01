@@ -21,3 +21,13 @@
 # Actions
 1) nodejs actions : actions/checkout@v4 is default action provided by Github for nodejs and actions/setup-node@v4 is default action to setuo node in runner. 
 npx create-react-app --template typescript react-app used to create react app inside directory.
+2) Events Filter : We are using it to control workflow run so that it will run whenever we make change in specific branch, tags or ignore any folder.
+3) Activity types : We are using it to control workflow run so that it will run whenever anthing we change in lifecycle of any events like pull request (reopened, closed or synchronized)
+
+# Context
+1) github
+2) env
+3) input
+4) vars
+5) secrets
+
