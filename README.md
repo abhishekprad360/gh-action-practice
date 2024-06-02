@@ -45,3 +45,18 @@ npx create-react-app --template typescript react-app used to create react app in
         2) failure()  -- used after any step or job...return true if last step fail and it will run nxt step
         3) always ()  -- used after any step or job...return true if last step fail or success
         4) cancelled() -- used after any step or job...
+
+# Execution
+1) It is used as need by this we can run job as per our requirement
+like  
+jobs:
+    job1:
+    job2:
+    job3:
+        need :
+            job1:
+            job2:
+    job4:
+        need :
+            job1
+job3 will run if job1 and job2 will execute first and job4 will run if job1 excuted first
