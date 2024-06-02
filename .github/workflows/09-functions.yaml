@@ -9,21 +9,20 @@ jobs :
             - name : Sleep for 20 seconds
               run : sleep 20
             - name : Failing step
-              if : ${{ success() }}
-              run : 1
+              run : exit 1
             - name : I will be skipped
-              if : ${{ failure() }}
+              if : ${{ success() }}
               run : |
                 echo "I will print if previous steps succeed."
             - name : I will execute
-              if : ${{ !cancelled() }}
+              if : ${{ failure() }}
               run : |
                 echo "I will print if any previous step fails."
             - name : I will execute
-              if : ${{ cancelled() }}
+              if : ${{ !cancelled() }}
               run : |
                 echo "I will always print, except when the workflow is cancelled."
             - name : I will execute when cancelled
-              if : ${{ failure() }}
+              if : ${{ cancelled() }}
               run : |
                 echo "I will always print, except when the workflow is cancelled."
