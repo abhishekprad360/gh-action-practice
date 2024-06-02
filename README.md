@@ -35,3 +35,13 @@ npx create-react-app --template typescript react-app used to create react app in
 # Expression
 
 1) Used of operators and functions
+    1) General Purpose functio
+        1) contains()
+        2) endsWith()
+        3) toJSON()
+        4) fromJSON()  -- used to chenge from string to any datatypes
+    2) Status Check functions
+        1) success()  -- used after any step or job...return true if last step success
+        2) failure()  -- used after any step or job...return true if last step fail and it will run nxt step
+        3) always ()  -- used after any step or job...return true if last step fail or success
+        4) cancelled() -- used after any step or job...
